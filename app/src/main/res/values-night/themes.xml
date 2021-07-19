@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.OpenRSS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryVariant">@color/darkbg</item>
+        <item name="colorOnPrimary">@color/teal_200</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:icon">@drawable/ic_refresh_dark</item>
+    </style>
+    <style name="BackgroundStyle">
+        <item name="android:background">@color/darkbg</item>
+    </style>
+    <style name="CardViewStyle">
+        <item name="cardBackgroundColor">@color/dark</item>
+    </style>
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/light</item>
     </style>
 </resources>

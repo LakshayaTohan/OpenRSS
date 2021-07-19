@@ -71,6 +71,7 @@ class FeedAdapter(private val rssObject: RSSObject, private val mContext: Contex
                 if (!isLongClick) {
                     val browserIntent =
                         Intent(Intent.ACTION_VIEW, Uri.parse(rssObject.items[position].link))
+                    browserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(browserIntent)
                 }
             }
